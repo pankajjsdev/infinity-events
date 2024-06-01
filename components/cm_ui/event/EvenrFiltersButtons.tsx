@@ -29,7 +29,7 @@ const filterButtons = [
 function EventFiltersButtons() {
     return (
         <section className='container my-[80px]'>
-            <div className='my-[80px]'>
+            <div className='my-[80px] bg-[#f5fffe] py-[46px]  px-[42px] rounded-[36px]'>
                 <h1 className='text-[40px] font-semibold'>A Personal experience like never before</h1>
                 <p className='text-[24px] font-medium'>Select your hobbies and other favorite activities to get suggestions based on what you love.</p>
                 <div className='flex flex-wrap gap-6 my-8 px-2'>
@@ -39,7 +39,7 @@ function EventFiltersButtons() {
                         </Link>
                     ))}
                 </div>
-                <Button className='bg-accent-darkCyan text-white hover:bg-accent-lightCyan'>See more</Button>
+                <Button className='bg-accent-darkCyan text-white hover:bg-accent-lightCyan mt-[64px]'>See more</Button>
             </div>
 
 

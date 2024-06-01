@@ -1,6 +1,7 @@
 
 import Section from "../common/Section"
 import EventCard from "./EventCard"
+import EventFilter from "./EventFilters"
 import EventNavs from "./EventNavs"
 import { EventCardProps } from "./type"
 
@@ -733,6 +734,7 @@ const events = [
 function EventSection() {
     return (
         <>
+        <EventFilter/>
         <EventNavs/>
             <Section title="Popular in Delhi" containerStyle="mt-[36px]">
                 <div className="grid grid-cols-1 xl:grid-cols-4 gap-8">

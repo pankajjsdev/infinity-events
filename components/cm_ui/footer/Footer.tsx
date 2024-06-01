@@ -41,7 +41,7 @@ function Footer() {
                             Sign up now and be the first to know about exclusive offers, latest fashion news & style tips!
                         </p>
                         <Input className="w-full mb-3" placeholder="Enter email here..." />
-                        <Button className="bg-accent-orange hover:bg-accent-lightOrange w-full">Sign up</Button>
+                        <Button className="bg-accent-orange hover:bg-accent-lightOrange w-full">Subscribe</Button>
                     </div>
                 </div>
                 <Link href="#" className="block mt-[80px] text-center text-[16px]">© Infinity Events, All Rights Reserved</Link>
