@@ -733,12 +733,13 @@ function MoreEvents() {
             {/* <EventFilter/> */}
             {/* <EventNavs/> */}
             <Section title="Popular in Delhi" containerStyle="mt-[36px]" subContainerStyle="lg:bg-[#ffffff] overflow-x-auto">
-                <div className="grid grid-cols-4 overflow-x-auto space-x-4 -mr-[35px] ">
+                <div className="flex flex-row overflow-x-auto space-x-4 -mr-[35px] ">
                     {
                         events.map((event, index) => {
                             return (
-                                
+                                <div key={index} className="flex-shrink">
                                     <EventCard key={index} event={event} type={1} />
+                                    </div>
                               
                             )
                         })

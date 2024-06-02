@@ -32,7 +32,7 @@ const images = [
 
 function HeroSection() {
     return (
-        <div className="w-full container mt-2">
+        <div className="w-full container my-2">
             <Carousel className="relative">
                 <CarouselContent>
                     {
