@@ -22,4 +22,5 @@ export interface Event {
 
 export interface EventCardProps {
     event: Event;
+    type:number
 }

@@ -1,6 +1,6 @@
 import CategorySection from "@/components/cm_ui/category/CategorySection";
 import EvenrFiltersButtons from "@/components/cm_ui/event/EvenrFiltersButtons";
-import EventSection from "@/components/cm_ui/event/EventSection";
+import EventSection from "@/components/cm_ui/event/index";
 import Feedback from "@/components/cm_ui/feedback/Feedback";
 import HeroSection from "@/components/cm_ui/hero/HeroSection";
 import { cookies } from "next/headers"

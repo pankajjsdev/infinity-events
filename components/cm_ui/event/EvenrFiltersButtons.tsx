@@ -46,7 +46,7 @@ function EventFiltersButtons() {
 
 
             <div className="w-full  h-[500px] mt-[80px] relative bg-[url('/assets/images/ads/ads2.png')] bg-cover bg-center rounded-2xl">
-                <div className="absolute left-20 bottom-20">
+                <div className="absolute left-10 lg:left-20 bottom-20">
                     <h3 className="text-white w-[350px] text-[24px] font-semibold">
                         You can now gift tickets to an event to your friends
                     </h3>
@@ -60,7 +60,7 @@ function EventFiltersButtons() {
             </div>
 
             <div className="w-full  h-[500px] relative bg-[url('/assets/images/ads/ads2.png')] bg-cover bg-center rounded-2xl my-10">
-                <div className='absolute  pl-16 py-5 pr-4 rounded-e-2xl bottom-20  bg-secondary-cyanDarkest'>
+                <div className='absolute  lg:pl-16 py-5 pr-4 rounded-e-2xl bottom-20  bg-secondary-cyanDarkest'>
                     <h3 className='text-white w-[350px] text-[24px] font-semibold'>Plan your own event</h3>
                     <p className='text-white my-4 text-[14px] font-medium'>Organize exiting events and contribute in all the fun!</p>
                     <Button className='bg-accent-darkCyan text-white hover:bg-accent-lightCyan'>Organize an event</Button>

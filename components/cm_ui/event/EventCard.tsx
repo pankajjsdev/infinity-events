@@ -11,29 +11,28 @@ import Link from "next/link"
 import { EventCardProps } from "./type"
 
 
-function EventCard({event}:EventCardProps) {
+function EventCard({event, type}:EventCardProps) {
     return (
-                            <Card className="py-4 rounded-[16px]">
-                                <CardContent>
+                            <div className="rounded-[16px] shadow border-2 py-[16px] px-[14px]">
                                     <Image
                                         src={event.thumbnail}
                                         alt=""
-                                        width={250}
+                                        width={268}
                                         height={166}
+                                        className="w-full h-[108px] lg:h-[166px]  rounded-[14px] object-cover"
                                     />
-                                    <h1 className="text-xl font-semibold mb-2">{event.title}</h1>
+                                    <h1 className="text-lg lg:text-xl font-semibold mb-2">{event.title}</h1>
                                     <p className="text-[12px] font-medium text-secondary-cyanDarkest mb-2">{event.date} {"'"} {event.time}</p>
                                     <p className="text-[12px] font-medium text-secondary-cyanDarkest mb-2">{event.location.address} {event.location.city} {event.location.state} {event.location.postal_code}</p>
-                                    <div className="all-center1">
+                                    <div className="hidden lg:all-center1">
                                         <Link className="text-[12px] font-medium text-neutral-grey5 underline" href={event.organizer.name}>{event.organizer.name}</Link>
                                         <span className="text-[12px] font-medium text-neutral-gre">{event.organizer.followers / 100}k followers</span>
                                     </div>
-                                    <p className="text-accent-darkCyan text-[12px] py-4">{event.attendance.confirmed_attendees} people are attending this event.</p>
-                                </CardContent>
-                                <CardFooter>
+                                    <p className="text-accent-darkCyan text-[12px] py-4 hidden lg:block">{event.attendance.confirmed_attendees} people are attending this event.</p>
+                                <CardFooter className="hidden lg:block">
                                     <p className="line-clamp-3 font-medium text-secondary-cyanDarkest text-[16px]">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, at ducimus? Fugit, eveniet nobis possimus illo nulla amet temporibus cum quis distinctio, sint saepe incidunt ea, consequatur ipsa dolores laudantium.</p>
                                 </CardFooter>
-                            </Card>
+                            </div>
 
     )
 }

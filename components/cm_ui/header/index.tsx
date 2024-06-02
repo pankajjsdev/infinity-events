@@ -8,11 +8,11 @@ import MobileNav from "./MobileNav";
 
 function Header() {
     return (
-        <header className="w-full bg-[#181D1C] py-3">
+        <header className="w-full  lg:bg-[#181D1C] py-3">
             {/*  desktop header */}
             <div className="hidden container xl:all-center1 text-white">
                 <div className="flex items-center gap-2">
-                    <FaInfinity size={50} className="" /> 
+                    <FaInfinity size={50} className="" />
                     <span className="text-3xl font-bold">Events</span>
                     <Search mode="desktop" />
                     <div className="flex flex-col items-center justify-center mx-2">
@@ -27,12 +27,26 @@ function Header() {
             </div>
 
             {/* mobile header */}
-            <div className="xl:hidden flex items-center justify-between mx-1">
+            {/* <div className="xl:hidden flex items-center justify-between mx-1">
                 <FaInfinity size={30} className="text-white" /> 
                 <Search mode="mobile" />
                 <div className="xl:hidden">
                     <MobileNav />
                 </div>
+            </div> */}
+
+
+            <div className="xl:hidden mx-1">
+                <div className="flex items-center justify-between mb-16">
+                    <div className="flex gap-1">
+                    <FaInfinity size={30} className="text-black" />
+                    <span className="text-3xl font-bold">Events</span>
+                    </div>
+                    <div className="xl:hidden">
+                        <MobileNav />
+                    </div>
+                </div>
+                <Search mode="mobile" />
             </div>
         </header>
     )

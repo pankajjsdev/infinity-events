@@ -86,8 +86,8 @@ function Feedback() {
                         </CarouselItem>
                     ))}
                 </CarouselContent>
-                <CarouselPrevious className="top-10" />
-                <CarouselNext className="top-10"  />
+                <CarouselPrevious className="top-10 hidden md:block lg:block" />
+                <CarouselNext className="top-10 hidden md:block lg:block"  />
             </Carousel>
         </Section>
     );
