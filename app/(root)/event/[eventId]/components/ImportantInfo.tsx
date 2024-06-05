@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button"
 
 function ImportantInfo() {
     return (
-        <Section title="Important Info" containerStyle="my-20" >
+        <Section title="Important Info" id="info">
             <div className="space-x-4">
             <Button className='bg-accent-lightCyan text-white hover:bg-accent-lightCyan'>Mobile eTickets</Button>
             <Button className='bg-accent-lightCyan text-white hover:bg-accent-lightCyan'>No Refunds</Button>

@@ -32,18 +32,18 @@ const images = [
 
 function HeroSection() {
     return (
-        <div className="w-full container my-2">
+        <div className="w-full  my-2">
             <Carousel className="relative">
                 <CarouselContent>
                     {
                         images.map((image, index) => {
                             return (
-                                <CarouselItem className="w-full h-[50vh] bg-accent-orange flex items-center justify-center" key={index}>
+                                <CarouselItem className="w-full h-[35vh] xl:h-[50vh] flex items-center justify-center" key={index}>
                                     <Image
                                         src={image.image}
                                         width={1250}
                                         height={500}
-                                        className="object-cover"
+                                        className="h-full bg-cover"
                                         alt="" priority />
                                 </CarouselItem>
                             )

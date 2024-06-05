@@ -2,8 +2,8 @@ import Section from "@/components/cm_ui/common/Section"
 
 function Description() {
     return (
-        <Section title="Description" containerStyle="my-20" >
-            <div className="">
+        <Section title="Description" id="description">
+            <div className="" >
                 <div>
                     <h3 className="text-secondary-cyanDarkest font-bold text-[16px] my-2">
                         Event Summary

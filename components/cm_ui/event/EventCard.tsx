@@ -13,13 +13,13 @@ import { EventCardProps } from "./type"
 
 function EventCard({event, type}:EventCardProps) {
     return (
-                            <div className="rounded-[16px] shadow border-2 py-[16px] px-[14px]">
+                            <div className={`rounded-[16px] shadow border-2 py-[16px] px-[14px] ${type == 3 ? 'w-[300px]' : ''}`}>
                                     <Image
                                         src={event.thumbnail}
                                         alt=""
-                                        width={268}
+                                        width={300}
                                         height={166}
-                                        className="w-full h-[108px] lg:h-[166px]  rounded-[14px] object-cover"
+                                        className="rounded-[14px] object-cover"
                                     />
                                     <h1 className="text-lg lg:text-xl font-semibold mb-2">{event.title}</h1>
                                     <p className="text-[12px] font-medium text-secondary-cyanDarkest mb-2">{event.date} {"'"} {event.time}</p>
