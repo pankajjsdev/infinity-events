@@ -5,7 +5,7 @@ function BasicInfo() {
   return (
     <>
       <Section title="Basic info" id="basic" containerStyle="hidden xl:flex ">
-        <div className="grid grid-cols-1">
+        <div>
           <div>
             <h1 className="text-secondary-cyanDarkest font-bold flex items-center gap-2">
               <IoIosCalendar size={30} className="text-secondary-cyanDarkest" />    Date
@@ -28,7 +28,7 @@ function BasicInfo() {
           </div>
         </div>
       </Section>
-      <Section title="Basic info" id="basic">
+      <Section title="Basic info" id="basic" containerStyle="xl:hidden">
         <div className="grid grid-cols-1 space-y-3">
           <div>
             <h1 className="text-secondary-cyanDarkest font-bold flex items-center gap-2">

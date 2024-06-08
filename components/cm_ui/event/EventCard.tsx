@@ -21,7 +21,7 @@ function EventCard({event, type}:EventCardProps) {
                                         height={166}
                                         className="rounded-[14px] object-cover"
                                     />
-                                    <h1 className="text-lg lg:text-xl font-semibold mb-2">{event.title}</h1>
+                                    <Link href={`/event/${event.title}`} className="text-lg lg:text-xl font-semibold mb-2">{event.title}</Link>
                                     <p className="text-[12px] font-medium text-secondary-cyanDarkest mb-2">{event.date} {"'"} {event.time}</p>
                                     <p className="text-[12px] font-medium text-secondary-cyanDarkest mb-2">{event.location.address} {event.location.city} {event.location.state} {event.location.postal_code}</p>
                                     <div className="hidden lg:all-center1">

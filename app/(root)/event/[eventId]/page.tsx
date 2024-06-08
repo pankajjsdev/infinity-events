@@ -7,19 +7,19 @@ import MoreEvents from "./components/MoreEvents"
 import EventName from "./components/EventName"
 import SpaceBar from "@/components/cm_ui/common/SpaceBar"
 import TabNavs from "./components/TabNavs"
-import { Button } from "@/components/ui/button"
+import TicketModal from "./components/TicketModal"
 
 
 function page() {
   return (
-    <div  className="bg-[#fbfbfb]">
+    <div className="bg-[#fbfbfb]">
       <div className="bg-[url('/assets/images/eventdetails/eventill.svg')] bg-no-repeat">
         <HeroSection />
       </div>
       <EventName />
-      {/* <SpaceBar /> */}
+      <SpaceBar />
       <TabNavs />
-      {/* <SpaceBar /> */}
+      <SpaceBar />
       <BasicInfo />
       <SpaceBar />
       <Description />
@@ -30,6 +30,7 @@ function page() {
       <SpaceBar />
       <MoreEvents />
       <SpaceBar />
+      <TicketModal />
     </div>
   )
 }
